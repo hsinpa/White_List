@@ -24,7 +24,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--<service android:name=".Phone.PhoneBackgroundReceiver"/>-->
-    </application>
 
+        <receiver  android:name=".Phone.PhoneBackgroundReceiver">
+            <intent-filter  android:priority="100" >
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+    </application>
 </manifest>

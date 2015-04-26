@@ -13,6 +13,9 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        Intent intent = new Intent(this, PhoneBackgroundReceiver.class);
+//        startService(intent);
+
         MainActivityFragment frag = new MainActivityFragment();
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
